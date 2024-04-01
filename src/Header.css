@@ -1,0 +1,56 @@
+/* Header.css */
+
+.header {
+    background-color: #34495e; /* Dark Blue */
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo img {
+    max-width: 100px;
+  }
+  
+  .navbar {
+    display: none;
+  }
+  
+  .navbar.open {
+    display: block;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .navbar li {
+    margin-bottom: 10px;
+  }
+  
+  .menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 5px 10px;
+  }
+  
+  .menu-toggle:hover {
+    color: #f39c12; /* Orange */
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .menu-toggle {
+      display: none;
+    }
+  
+    .navbar {
+      display: block;
+    }
+  }
+  
