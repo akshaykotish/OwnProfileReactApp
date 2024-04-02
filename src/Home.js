@@ -1,6 +1,7 @@
 import React from 'react';
 import Slide from './Slide';
 import Performer from './Performer';
+import FoundersPage from './FounderPage';
 
 function Home(){
 
@@ -8,6 +9,7 @@ function Home(){
         <>
         <Slide />
         <Performer />
+        <FoundersPage/>
         </>
     );
 }

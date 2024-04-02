@@ -10,6 +10,7 @@ import Categories from './Categories';
 import Category from './Category';
 import Contact from './Contact';
 import Navbar from './Navbar';
+import Footer from './Footer';
 
 function App() {
   return (
@@ -29,7 +30,7 @@ function App() {
         </Routes>
       </main>
       <footer className="footer">
-        <p>Footer Section</p>
+        <Footer/>
       </footer>
     </div>
       

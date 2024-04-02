@@ -18,6 +18,7 @@ function Slide(){
             SliderImages.push("/SlideImages/img (5).jpg");
             SliderImages.push("/SlideImages/img (6).jpg");
             SliderImages.push("/SlideImages/img (7).jpg");
+            SliderImages.push("/SlideImages/img (8).jpg");
             SliderImages.push("/SlideImages/Designer (1).png");
             SliderImages.push("/SlideImages/Designer (2).png");
             SliderImages.push("/SlideImages/Designer (3).png");
