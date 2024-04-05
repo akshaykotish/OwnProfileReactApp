@@ -189,25 +189,29 @@
     animation-name: slideOutToBottom;
     animation-duration: 1s; /* Duration of the animation */
     transform: translateY(100%);
-    visibility: hidden;
+    opacity: 0;
   }
 
 
   @keyframes slideInFromBottom {
     from {
       transform: translateY(100%);
+      opacity: 0;
     }
     to {
       transform: translateY(0);
+      opacity: 1;
     }
   }
 
   @keyframes slideOutToBottom {
     from {
         transform: translateY(0%);
+        opacity: 1;
       }
       to {
         transform: translateY(100%);
+        opacity: 0;
       }
   }
 
@@ -240,17 +244,17 @@
   }
 
   .ImageSliderBox{
-    margin: 2%;
-    width: 94%;
+    margin: 10%;
+    width: 80%;
+    height: 50vh;
     border-radius: 10px;
-    box-shadow: -4px -5px 10px rgb(210, 210, 210), 4px 5px 10px rgb(153, 153, 153);
     overflow: hidden;
   }  
 
   
   .MoreDetails{
-    margin: 2%;
-    width: 96%;
+    margin: 5%;
+    width: 90%;
   }
 
   }

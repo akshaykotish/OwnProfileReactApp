@@ -85,6 +85,14 @@
 
 }
 
+.Bruh{
+  width: 100%;
+  overflow: hidden;
+}
+
+.Bruh img{
+  width: 100%;
+}
 
 /* Media Query for Responsive Design */
 @media only screen and (max-width: 768px) {
@@ -118,5 +126,8 @@
     height: 50%;
   }
 
+  .ProfileExport{
+    margin: 2%;
+  }
   
 }

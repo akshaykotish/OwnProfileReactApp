@@ -33,7 +33,9 @@ function Slide(){
 
     useEffect(()=>{
         setTimeout(() => {
-            document.getElementById("MobileImageSlider").classList.add("FadeInImage");
+            if(document.getElementById("MobileImageSlider") != null){
+                document.getElementById("MobileImageSlider").classList.add("FadeInImage");
+            }
             if(index >= SliderImages.length - 1)
             {            
                 changeIndex(0);
@@ -42,7 +44,9 @@ function Slide(){
                 changeIndex(index + 1);
             }
             setTimeout(()=>{
-                document.getElementById("MobileImageSlider").classList.remove("FadeInImage");
+                if(document.getElementById("MobileImageSlider") != null){
+                    document.getElementById("MobileImageSlider").classList.remove("FadeInImage");
+                }
             }, 2000);
         }, 5000);
     }, [index]);
@@ -50,14 +54,21 @@ function Slide(){
     if(window.innerWidth < 600){
         return (
             <>
-            <div>
+            <div>     
+                <div className='Bruh'>
+                    <img src='/Designer (18).png' />
+                </div>
+                <div className='ProfileExport'>
+                    <h2>Exporting Goods</h2>
+                    <p>The company exports disposable items, equipments, and spare parts. They emphasize that they provide high quality products at competitive prices with timely delivery. In the testimonials section, clients say that Profile Overseas is a reliable company that provides good service.</p>
+                </div>
                 <div className='MoreDetails'>
-                    <h1>
-                    “Pedaling Quality, Crafting Convenience!” 🚴‍♂️🍽️
-                    </h1>
+                    <h4>
+                    “Pedaling Quality, Crafting Convenience!” <br/>🚴‍♂️🍽️
+                    </h4>
                 </div>
                 <div className='ImageSliderBox'>
-                    <img id="MobileImageSlider" src={SliderImages[index]} width="100%"></img>
+                    <img id="MobileImageSlider" src={SliderImages[index]} height="100%"></img>
                 </div>
                 <div className='MoreDetails'>
                     <h3>Tableware and cycle parts manufacturing & exports</h3>
@@ -72,6 +83,9 @@ function Slide(){
     else{
         return (
             <>
+            <div className='Bruh'>
+                <img src='/Designer (16).png' />
+            </div>
             <div className='ImagePromotionBox'>
                 <div className='MoreDetails'>
                     <h1>

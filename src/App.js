@@ -5,6 +5,7 @@ import React from 'react';
 
 import Home from './Home';
 import Products from './Products';
+import ProductPage from  './ProductPage';
 import Product from './Product';
 import Categories from './Categories';
 import Category from './Category';
@@ -13,6 +14,7 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 
 function App() {
+  
   return (
     <Router>
       <div className="App">
@@ -22,8 +24,9 @@ function App() {
       <main className="page-content">
         <Routes>
           <Route path='/' element={<Home/>} />
-          <Route path='/products' component={Products} />
-          <Route path='/products/:id' component={Product} />
+          {/* <Route path='/products' component={Products} /> */}
+          <Route path='/products/:section' element={<ProductPage/>} />
+          {/* <Route path='/products/:id' component={Product} /> */}
           <Route path='/categories' component={Categories} />
           <Route path='/categories/:id' component={Category} />
           <Route path='/contact' component={Contact} />

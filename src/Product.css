@@ -1,0 +1,132 @@
+.category-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    overflow: hidden;
+    flex-direction: row;
+  }
+  
+  .CategoryHead{
+    width: 100%;
+  }
+
+  .category-buttons .buttons {
+    margin: 0.5%;
+    padding: 0.6%;
+    background-color: #eee;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 9pt;
+  }
+  
+  .category-buttons .buttons.active {
+    background-color: #ccc;
+  }
+  
+  .ProductPhotoHighlightSection{
+    width: 96%;
+    height: 60vh;
+    margin: 2%;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .ProductPhotoHighlightSection img{
+    width: 100%;
+    margin-top: -20%;
+  }
+
+  .products {
+    margin: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    overflow: hidden;
+    flex-direction: row;
+  }
+
+  .productshead{
+    margin: 3.5%;
+    margin-left: 10%;
+    margin-bottom: 0;
+    text-align: left;
+  }
+  
+  .product {
+    border: 1px solid #e7e7e7;
+    padding: 10px;
+    border-radius: 10px;
+    width: 18vw;
+    height: 60vh;
+    margin: 0.5%;
+    background-color: #f4f4f4;
+  }
+  
+  .product .image{
+    width: 98%;
+    height: 66%;
+    overflow: hidden;
+    border-radius: 4%;
+    background-color: #f4f4f4;
+  }
+
+  .product img {
+    height: 100%;
+  }
+
+  .allshopbtns{
+    margin: 1%;
+    padding: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    overflow: hidden;
+    flex-direction: row;
+  }
+
+  .allshopbtns .btn{
+    width: 3vw;
+    height: 3vw;
+    border-radius: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    overflow: hidden;
+    flex-direction: row;
+  }
+
+  @media screen and (max-width: 748px) {
+    .product {
+        border: 1px solid #ccc;
+        padding: 10px;
+        border-radius: 10px;
+        width: 90%;
+        margin: 1%;
+    }
+
+    
+  .category-buttons .buttons {
+    margin: 1%;
+    padding: 2%;
+  }
+
+  .ProductPhotoHighlightSection{
+    height: 20vh;
+  }
+
+  .ProductPhotoHighlightSection img{
+    margin-top: 0;
+    width: 100%;
+  }
+  }
