@@ -8,7 +8,7 @@ const FoundersPage = () => {
     {
         name: 'Karan Singla',
         photo: 'https://cdn-icons-png.flaticon.com/512/3135/3135715.png',
-        phone: '+91 12345-12345',
+        phone: '+91 +91 84275 29709',
         details: 'He is the founder of a successful manufacturing company specializing in cycle parts and tableware. His entrepreneurial spirit and leadership have propelled the company to prominence in the industry.',
       },
       // {

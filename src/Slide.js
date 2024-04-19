@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 function Slide(){
     const [index, changeIndex] = useState(0);
-    const [SliderImages, SliderImagesUpdate] = useState(["/SlideImages/img (1).jpg"]);
+    const [SliderImages, SliderImagesUpdate] = useState(["/SlideImages/A.jpg"]);
 
 
     const randomNumberInRange = (min, max) => {
@@ -12,20 +12,12 @@ function Slide(){
 
     useEffect(()=>{
         if(SliderImages.length <= 1){
-            SliderImages.push("/SlideImages/img (2).jpg");
-            SliderImages.push("/SlideImages/img (3).jpg");
-            SliderImages.push("/SlideImages/img (4).jpg");
-            SliderImages.push("/SlideImages/img (5).jpg");
-            SliderImages.push("/SlideImages/img (6).jpg");
-            SliderImages.push("/SlideImages/img (7).jpg");
-            SliderImages.push("/SlideImages/img (8).jpg");
-            SliderImages.push("/SlideImages/Designer (1).png");
-            SliderImages.push("/SlideImages/Designer (2).png");
-            SliderImages.push("/SlideImages/Designer (3).png");
-            SliderImages.push("/SlideImages/Designer (4).png");
-            SliderImages.push("/SlideImages/Designer (5).png");
-            SliderImages.push("/SlideImages/Designer (6).png");
-            SliderImages.push("/SlideImages/Designer.png");
+            SliderImages.push("/SlideImages/B.jpg");
+            SliderImages.push("/SlideImages/C.jpg");
+            SliderImages.push("/SlideImages/D.jpg");
+            SliderImages.push("/SlideImages/E.jpg");
+            SliderImages.push("/SlideImages/F.jpg");
+            SliderImages.push("/SlideImages/G.jpg");
             SliderImagesUpdate(SliderImages);
             changeIndex(randomNumberInRange(0, SliderImages.length-1));
         }
@@ -56,7 +48,7 @@ function Slide(){
             <>
             <div>     
                 <div className='Bruh'>
-                    <img src='/Designer (18).png' />
+                    <img src='/Designer (18).jpg' />
                 </div>
                 <div className='ProfileExport'>
                     <h2>Exporting Goods</h2>
@@ -84,7 +76,7 @@ function Slide(){
         return (
             <>
             <div className='Bruh'>
-                <img src='/Designer (16).png' />
+                <img src='/Designer (16).jpg' />
             </div>
             <div className='ImagePromotionBox'>
                 <div className='MoreDetails'>
@@ -92,14 +84,13 @@ function Slide(){
                     “Pedaling Quality, Crafting Convenience!” 🚴‍♂️🍽️
                     </h1>
                 </div>
-                <img id="MobileImageSlider" src={SliderImages[8]}></img>
-                <img id="MobileImageSlider" src={SliderImages[9]}></img>
-                <img id="MobileImageSlider" src={SliderImages[10]}></img>
-                <img id="MobileImageSlider" src={SliderImages[11]}></img>
-                <img id="MobileImageSlider" src={SliderImages[12]}></img>
-                <img id="MobileImageSlider" src={SliderImages[13]}></img>
-                <img id="MobileImageSlider" src={SliderImages[6]}></img>
+                <img id="MobileImageSlider" src={SliderImages[0]}></img>
+                <img id="MobileImageSlider" src={SliderImages[1]}></img>
+                <img id="MobileImageSlider" src={SliderImages[2]}></img>
+                <img id="MobileImageSlider" src={SliderImages[3]}></img>
+                <img id="MobileImageSlider" src={SliderImages[4]}></img>
                 <img id="MobileImageSlider" src={SliderImages[5]}></img>
+                <img id="MobileImageSlider" src={SliderImages[6]}></img>
                 <div className='MoreDetails'>
                     <h3>Tableware and cycle parts manufacturing & exports</h3>
                     <p>

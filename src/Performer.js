@@ -17,7 +17,7 @@ function Home(){
             </div>
             <div className='Category' onClick={()=>handleClick("/Products/Cycle Parts")}>
                 <div className='Img'>
-                    <img src='Designer (13).png' width="100%"></img>
+                    <img src='Designer (13).jpg' width="100%"></img>
                 </div>
                 <div className='Text'>
                     <h2>Cycle Parts</h2>
@@ -28,7 +28,7 @@ function Home(){
             </div>
             <div className='Category' onClick={()=>handleClick("/Products/Tableware")}>
                 <div className='Img'>
-                    <img src='Designer (14).png' width="100%"></img>
+                    <img src='Designer (14).jpg' width="100%"></img>
                 </div>
                 <div className='Text'>
                     <h2>Tableware</h2>
@@ -39,7 +39,7 @@ function Home(){
             </div>
             <div className='Category' onClick={()=>handleClick("/Products/Tableware")}>
             <div className='Img'>
-                    <img src='/Catalogue.png' width="100%"></img>
+                    <img src='/Catalogue.jpg' width="100%"></img>
                 </div>
                 <div className='Text'>
                     <h2>Download the product catalogue</h2>

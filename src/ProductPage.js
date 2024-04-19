@@ -49,7 +49,7 @@ const productsData = [
   { id: 41, name: 'Paper Bags 2', image: '/Product/41.jpg', section: 'Tableware', category: 'Paper Bag', details: "" },
   { id: 42, name: 'Straw Plain', image: '/Product/42.jpg', section: 'Tableware', category: 'Straw', details: "Sizes are 6' to 10'" },
   { id: 43, name: 'Straw Colored', image: '/Product/43.jpg', section: 'Tableware', category: 'Straw', details: "Sizes are 6' to 10'" },
-  { id: 44, name: 'Handle Grip', image: '/Product/44.jpg', section: 'Tableware', category: 'Handle Grip', details: "" },
+  { id: 44, name: 'Handle Grip', image: '/Product/44.jpg', section: 'Cycle Parts', category: 'Handle Grip', details: "" },
   
   { id: 45, name: 'Round Shallow', image: '/Product/45.jpg', section: 'Tableware', category: 'Round Plates', details: "Sizes are 6 to 12 inch" },
   { id: 46, name: 'Round Deep', image: '/Product/46.jpg', section: 'Tableware', category: 'Round Plates', details: "Sizes are 6 to 12 inch" },
@@ -117,7 +117,7 @@ const ProductPage = () => {
   return (
     <div>
       <div className='ProductPhotoHighlightSection'>
-        <img src={section == "Cycle Parts" ? '/SlideCP.png' : '/TW.png'} />
+        <img src={section == "Cycle Parts" ? '/SlideCP.jpg' : '/TW.jpg'} />
       </div>
       <h1>{section}</h1>
       <div className="category-buttons">

@@ -129,4 +129,14 @@
     margin-top: 0;
     width: 100%;
   }
+
+  .allshopbtns{
+    width: 90%;
+  }
+
+  .allshopbtns .btn{
+    width: 8vw;
+    height: 8vw;
+  }
+
   }
